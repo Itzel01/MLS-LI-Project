@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Pet Tracker</h1>
+  <form>
+    <label for="pet-name">Pet Name <span>*</span></label>
+    <input type="text" name="petName" id="pet-name" required>
+    <label for="pet-url">Profile Picture <span>*</span></label>
+    <input type="url" name="petURL" id="pet-url" placeholder="Picture URL" required>
+    <fieldset>
+      <legend>Species <span>*</span></legend>
+      <label for="dog">Dog</label>
+      <input type="radio" name="animal" id="dog" required>
+      <label for="cat">Cat</label>
+      <input type="radio" name="animal" id="cat">
+      <label for="bird">Bird</label>
+      <input type="radio" name="animal" id="bird">
+    </fieldset>
+    <label for="is-friendly">Are they friendly?</label>
+    <input type="checkbox" name="isFriendly" id="is-friendly">
+    <button type="submit">Add Pet!</button>
+  </form>
+  <h2>Pet List</h2>
+</body>
+</html>
