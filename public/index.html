@@ -4,18 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <title>Document</title>
 </head>
 <body>
   <h1>Pet Tracker</h1>
-  <form>
-    <label for="pet-name">Pet Name <span>*</span></label>
+  <form id="pet-form">
+    <label for="pet-name">Pet Name <span aria-label="required">*</span></label>
     <input type="text" name="petName" id="pet-name" required>
-    <label for="pet-url">Profile Picture <span>*</span></label>
+    <br>
+    <label for="pet-url">Profile Picture <span aria-label="required">*</span></label>
     <input type="url" name="petURL" id="pet-url" placeholder="Picture URL" required>
+    <br>
     <fieldset>
-      <legend>Species <span>*</span></legend>
+      <legend>Species <span aria-label="required">*</span></legend>
       <label for="dog">Dog</label>
       <input type="radio" name="animal" id="dog" required>
       <label for="cat">Cat</label>
@@ -28,5 +30,6 @@
     <button type="submit">Add Pet!</button>
   </form>
   <h2>Pet List</h2>
+  <main id="card-box"></main>
 </body>
 </html>

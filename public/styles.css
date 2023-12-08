@@ -1,3 +1,17 @@
 span {
   color: red;
 }
+
+main{
+  width: 100vw;
+  height: 80vh;
+}
+
+figure {
+  width: 25%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
